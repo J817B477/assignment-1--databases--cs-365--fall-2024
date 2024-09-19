@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,500;1,6..12,200;1,6..12,500&display=swap');
+
+:root,
+:root::before,
+student,
+student::before,
+advisor{
+  display: block;
+  background-color:rgba(194, 119, 21, 0.336)
+}
+
+:root {
+  margin: 0 auto;
+  width: 1200px;
+  font: 200 16px 'Nunito Sans', serif;
+  display: block;
+  border-style: solid;
+  border-color: antiquewhite;
+}
+
+:root::before {
+  content: 'Student Body';
+  text-align: center;
+  font-size: 4vw;
+  margin: 10vh 0;
+  color: rgb(63, 8, 8)
+}
+
+
+student {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 10vh;
+  display: block;
+  border-style: solid;
+  border-color: antiquewhite;
+}
+
+identifiers::before {
+  content: attr(first) ' ' attr(middle) ' ' attr(last) ' ' attr(preferred-name);
+  display: block;
+  padding-left: .5vh;
+  font-size: 2.2vw;
+  margin-bottom: 2vh;
+  color: rgb(63, 8, 8)
+}
+
+contact::before {
+  content: 'phone: ' attr(phone) "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0"'email: ' attr(email);
+  display: block;
+  font-size: 1.6vw;
+  margin-bottom: 4vh;
+  margin-left: .5vw;
+  color: blue;
+}
+
+
+
+
+student-id::before {
+  content: 'Student ID: \00a0' attr(id);
+  font-size: 1.8vw;
+  padding-left: .5vh;
+  display: block;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: rgb(63, 8, 8);
+}
+
+advisor::before {
+  content: 'Advisor: \00a0' attr(name);
+  font-size: 1.8vw;
+  margin-left: 2vw;
+  display: block;
+}
+
+academic-standing::before {
+  content:  "GPA: " attr(gpa)
+            "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 Major: " attr(major)
+            "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 Minor: " attr(minor);
+  font-size: 1.8vw;
+  padding-left: 2vw;
+  color:rgb(63, 8, 8);
+  display: block;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-color: antiquewhite;
+}
+
+metriculation-status::before {
+  content:  attr(status)
+            "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0" attr(year)
+            "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 Enrolment: " attr(start-date)
+            "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 Graduation: " attr(graduation-date);
+  font-size: 1.8vw;
+  display: block;
+  margin-left: 2vw;
+  color:rgb(63, 8, 8);
+}
+
+
+
+
+
