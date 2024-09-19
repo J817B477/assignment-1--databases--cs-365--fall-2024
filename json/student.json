@@ -1,0 +1,148 @@
+{"student-body": [{
+    "0" : {
+      "student": {
+        "personal_information": {
+          "identifiers": {
+            "preferred_name": "Sting",
+            "first": "Gordon",
+            "middle": "Matthew",
+            "last": "Sumner"
+          },
+          "contact": {
+            "email": "sting@thepolice.com",
+            "phone": "212.123.4567"
+          }
+        },
+        "student-id": "1234567",
+        "advisor": "Andy Summers",
+        "academic_standing": {
+          "gpa": "4.0",
+          "major": "Music",
+          "minor": "English"
+        },
+        "metriculation_status": {
+          "status": "full-time",
+          "year": "first year",
+          "start-date": "08-25-1969",
+          "graduation-date": "05-01-1973"
+        }
+      }
+    },
+    "1" : {
+      "student": {
+        "personal_information": {
+          "identifiers": {
+            "preferred_name": "",
+            "first": "Kim",
+            "middle": "",
+            "last": "Thayil"
+          },
+          "contact": {
+            "email": "kim@soundgarden.com",
+            "phone": "206.123.4567"
+          }
+        },
+        "student-id": "4567890",
+        "advisor": "Chris Cornell",
+        "academic_standing": {
+          "gpa": "3.0",
+          "major": "Philosophy",
+          "minor": "Music"
+        },
+        "metriculation_status": {
+          "status": "full-time",
+          "year": "second year",
+          "start-date": "08-25-1978",
+          "graduation-date": "05-01-1982"
+        }
+      }
+    },
+    "2" : {
+      "student": {
+        "personal_information": {
+          "identifiers": {
+            "preferred_name": "(Slash)",
+            "first": "Saul",
+            "middle": "",
+            "last": "Hudson"
+          },
+          "contact": {
+            "email": "slash@gnr.com",
+            "phone": "213.456.8392"
+          }
+        },
+        "student-id": "8302438",
+        "advisor": "Axl Rose",
+        "academic_standing": {
+          "gpa": "2.0",
+          "major": "Music",
+          "minor": "Criminal Justice"
+        },
+        "metriculation_status": {
+          "status": "part-time",
+          "year": "fourth year",
+          "start-date": "08-25-1983",
+          "graduation-date": "05-01-1987"
+        }
+      }
+    },
+    "3" : {
+      "student": {
+        "personal_information": {
+          "identifiers": {
+            "preferred_name": "",
+            "first": "Emily",
+            "middle": "",
+            "last": "Kokal"
+          },
+          "contact": {
+            "email": "emily@warpaint.com",
+            "phone": "213.123.7654"
+          }
+        },
+        "student-id": "2983928",
+        "advisor": "Jenny Lee Lindberg",
+        "academic_standing": {
+          "gpa": "3.8",
+          "major": "Political Science",
+          "minor": "Law"
+        },
+        "metriculation_status": {
+          "status": "full-time",
+          "year": "third year",
+          "start-date": "08-25-1998",
+          "graduation-date": "05-01-2002"
+        }
+      }
+    },
+    "4" : {
+      "student": {
+        "personal_information": {
+          "identifiers": {
+            "preferred_name": "",
+            "first": "Mike",
+            "middle": "",
+            "last": "Inez"
+          },
+          "contact": {
+            "email": "mike@aic.com",
+            "phone": "213.444.3323"
+          }
+        },
+        "student-id": "7645726",
+        "advisor": "Jerry Cantrell",
+        "academic_standing": {
+          "gpa": "4.0",
+          "major": "Business Management",
+          "minor": "Math"
+        },
+        "metriculation_status": {
+          "status": "full-time",
+          "year": "second year",
+          "start-date": "08-25-1984",
+          "graduation-date": "05-01-1988"
+        }
+      }
+    }
+  }
+]}
