@@ -1,0 +1,90 @@
+<!--
+The root element: student-body
+
+The root must contain one or more student elements but no PCDATA or CDATA
+-->
+<!ELEMENT student-body (student)+>
+
+<!--
+The student element must contain one of each advisor, personal-info, academic-standing,
+and metriculation-status element types
+-->
+<!ELEMENT student (personal-info,student-id, advisor,  academic-standing, metriculation-status)>
+<!ELEMENT advisor EMPTY>
+
+<!--
+The personal-info element must contain one of each  identifiers and contact element types
+-->
+<!ELEMENT personal-info         (identifiers, contact)>
+<!ELEMENT identifiers           EMPTY>
+<!ELEMENT contact               EMPTY>
+<!ELEMENT academic-standing     EMPTY>
+<!ELEMENT metriculation-status  EMPTY>
+
+<!--
+All EMPTY elements have at least one attribute to store data. This is to ensure that the
+grammer insists that certain data be present for each and in many instances require a value
+be assigned to it.
+-->
+
+
+<!--
+"identifiers" element attributes:
+* "preferred-name" attribute must have character data; IS NOT required for each element instance
+* "first" attribute must have character data; IS required for each element instance
+* "middle" attribute must have character data; IS NOT required for each element instance
+* "last" attribute must have character data; IS required for each element instance
+-->
+<!ATTLIST identifiers
+          preferred-name  CDATA
+          first           CDATA #REQUIRED
+          middle          CDATA
+          last            CDATA #REQUIRED>
+
+<!--
+"contact" element attributes:
+* "phone" attribute must have character data; IS required for each element instance
+* "first" attribute must have character data; IS required for each element instance
+-->
+<!ATTLIST contact
+          email CDATA #REQUIRED
+          phone CDATA #REQUIRED>
+
+<!--
+the "name" attribute of the "advisor" element must have character data
+the attribute is required for each "advisor" element
+-->
+<!ATTLIST student-id
+          id CDATA #REQUIRED>
+
+<!--
+the "name" attribute of the "advisor" element must have character data
+the attribute is required for each "advisor" element
+-->
+<!ATTLIST advisor
+          name CDATA #REQUIRED>
+
+<!--
+"academic-standing" element attributes:
+* "gpa" attribute must have character data; IS required for each element instance
+* "major" attribute must have character data; IS required for each element instance
+* "minor" attribute must have character data; IS required for each element instance
+-->
+
+<!ATTLIST academic-standing
+          gpa   CDATA #REQUIRED
+          major CDATA #REQUIRED
+          minor CDATA #REQUIRED>
+
+<!--
+"contact" element attributes:
+* "status" attribute value restricted to "full-time"or "part-time"; IS required for each element instance
+* "year" attribute value restricted to four values; IS required for each element instance
+* "start-date" attribute must have character data; IS required for each element instance
+* "graduation-date" attribute must have character data; IS required for each element instance
+-->
+<!ATTLIST metriculation-status
+          status          (full-time|part-time) #REQUIRED
+          year            (first year|second year|third year|fourth year) #REQUIRED
+          start-date      CDATA #REQUIRED
+          graduation-date CDATA #REQUIRED>
