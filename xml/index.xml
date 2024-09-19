@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="../xml/style.css"?>
+<!DOCTYPE student SYSTEM "../xml/student.dtd" > <!--provides what attributes and nested elements each element of a given type can and cannot have up to the root element-->
+
+<student-body>
+  <student>
+    <personal-info>
+      <identifiers  preferred-name = "(Sting)"
+                    first = "Gordon"
+                    middle = "Matthew"
+                    last = "Sumner"
+      />
+      <contact  email = "sting@thepolice.com"
+                phone = "212.123.4567"
+      />
+    </personal-info>
+    <student-id id = "1234567"/>
+    <advisor name = "Andy Summers"/>
+    <academic-standing  gpa = "4.0"
+                        major = "Music"
+                        minor = "English"
+    />
+    <metriculation-status status = "full-time"
+                          year = "first year"
+                          start-date = "08-25-1969"
+                          graduation-date = "08-25-1969"
+    />
+  </student>
+
+  <student>
+    <personal-info>
+      <identifiers  first = "Kim"
+                    last = "Thayil"
+      />
+      <contact  email = "kim@soundgarden.com"
+                phone = "206.123.4567"
+      />
+    </personal-info>
+    <student-id id = "4567890"/>
+    <advisor name = "Chris Cornell"/>
+    <academic-standing  gpa = "3.0"
+                        major = "Philosophy"
+                        minor = "Music"
+    />
+    <metriculation-status status = "full-time"
+                          year = "second year"
+                          start-date = "08-25-1978"
+                          graduation-date = "05-01-1982"
+    />
+  </student>
+
+  <student>
+    <personal-info>
+      <identifiers  preferred-name = "(Slash)"
+                    first = "Saul"
+                    last = "Hudson"
+      />
+      <contact  email = "slash@gnr.com"
+                phone = "213.456.8392"
+
+      />
+    </personal-info>
+    <student-id id = "8302438"/>
+    <advisor name = "Axl Rose"/>
+    <academic-standing  gpa = "2.0"
+                        major = "Music"
+                        minor = "Criminal Justice"
+    />
+    <metriculation-status status = "part-time"
+                          year = "fourth year"
+                          start-date = "08-25-1983"
+                          graduation-date = "05-01-1987"
+    />
+  </student>
+
+  <student>
+    <personal-info>
+      <identifiers  first = "Emily"
+                    last = "Kokal"
+      />
+      <contact  email = "emily@warpaint.com"
+                phone = "213.123.7654"
+      />
+    </personal-info>
+    <student-id id = "2983928"/>
+    <advisor name = "Jenny Lee Lindberg"/>
+    <academic-standing  gpa = "3.8"
+                        major = "Political Science"
+                        minor = "Law"
+    />
+    <metriculation-status status = "full-time"
+                          year = "third year"
+                          start-date = "08-25-1998"
+                          graduation-date = "05-01-2002"
+    />
+  </student>
+
+  <student>
+    <personal-info>
+      <identifiers  first = "Mike"
+                    last = "Inez"
+      />
+      <contact  email = "mike@aic.com"
+                phone = "213.444.3323"
+
+      />
+    </personal-info>
+    <student-id id = "7645726"/>
+    <advisor name = "Jerry Cantrell"/>
+    <academic-standing  gpa = "4.0"
+                        major = "Business Management"
+                        minor = "Math"
+    />
+    <metriculation-status status = "full-time"
+                          year = "second year"
+                          start-date = "08-25-1984"
+                          graduation-date = "05-01-1988"
+    />
+  </student>
+</student-body>
